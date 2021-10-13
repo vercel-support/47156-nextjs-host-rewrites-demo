@@ -3,7 +3,7 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/:path*',
+        source: '/:path((?!wood/).*)',
         has: [
           {
             type: 'host',
