@@ -26,7 +26,7 @@ function Home({now}) {
         </p>
 
         <div style={{textAlign: 'left', width: '100%'}}>
-          <a href="https://nextjs-time-api.vercel-support.app/api/time" target="_blank" style={{'textDecoration': 'underline'}}>Time API</a> Returned:
+          <a href="https://nextjs-time-api.vercel-support.app/api/time" target="_blank" rel="noreferrer" style={{'textDecoration': 'underline'}}>Time API</a> Returned:
           <pre>
             {
               now
