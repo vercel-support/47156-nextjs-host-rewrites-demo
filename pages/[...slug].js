@@ -78,7 +78,7 @@ function Home({now}) {
 }
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch('https://nextjs-time-api.vercel-support.app/api/time')
   const {now} = await res.json()
 
@@ -94,12 +94,12 @@ export async function getStaticProps() {
 }
 
 // This function gets called at build time
-export async function getStaticPaths() {
-  return {
-    fallback: true,
-    paths: []
-  }
-}
+// export async function getStaticPaths() {
+//   return {
+//     fallback: true,
+//     paths: []
+//   }
+// }
 
 
 export default Home
